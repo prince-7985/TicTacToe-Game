@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+nav{
+    background-color: rgb(72, 6, 49);
+    color: white;
+    height: 65px;
+    text-transform: capitalize;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: 17px;
+    align-items: center;
+    height: 100%;
+    text-decoration: underline;
+
+}
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+}
+.main{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.head{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: repeat(3 , 12vw);
+    grid-template-rows: repeat(3, 12vw);
+    position: relative;
+}
+.box{
+    
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(218, 235, 235);
+}
+.container{
+padding: 0 20px;
+font-family: 'Baloo Bhaina 2', cursive;
+}
+.container h1{
+    font-size: 2.5rem;
+}
+
+.info {
+    font-size: 22px;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+
+.btn{
+    width: 75px;
+    height: 40px;
+    border-style: none;
+    border: 1px solid rgb(1, 20, 1);
+    border-radius: 5px;
+    font-weight:400;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    background: #02710b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+
+
+@media screen and (max-width: 950px)
+{
+    .main{
+        flex-wrap: wrap;
+    }
+    .container{
+        margin-top: 34px;
+    }
+    .container h1{
+        font-size: 1.5rem;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    nav{
+        flex-direction: column;
+        height: 100px;
+    }
+    nav ul{
+        font-weight: 300;
+        font-size: 20px;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
